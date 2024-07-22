@@ -36,7 +36,7 @@ async function sendEmail(to, subject, templateData) {
 }
 
 // Schedule a task to send an email every day at 10:20 AM
-cron.schedule('41 10 * * *', () => {
+cron.schedule('30 13 * * *', () => {
     sendEmail('sean@raysuncapital.com', 'Daily Update', {
         name: 'John Doe',
         message: 'Here is your daily update!'
